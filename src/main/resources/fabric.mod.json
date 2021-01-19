@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "nodiscord",
+  "version": "${version}",
+
+  "name": "No Discord",
+  "description": "Disables discord RPC",
+  "authors": [
+    "marcus8448"
+  ],
+  "contact": {
+    "homepage": "https://marcus8448.github.io/",
+    "sources": "https://github.com/marcus8448/nodiscord"
+  },
+
+  "license": "MIT",
+  "icon": "assets/nodiscord/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "io.github.marcus8448.mods.nodiscord.NoDiscord"
+    ]
+  },
+  "mixins": [
+    "nodiscord.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.1",
+    "mindustry": ">=122.1"
+  }
+}
